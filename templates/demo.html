@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+        <h1>this is my first djago project </h1>
+   
+   <form action="" method="POST" novalidate>
+       {% csrf_token %}
+       {{form.as_p}}
+       <input type="submit" value="submit"/>
+   </form>
+  
+    {% endblock content %}
